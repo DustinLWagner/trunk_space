@@ -1,0 +1,45 @@
+html {
+margin:  150px 150px 1050px 150px;
+}
+
+
+
+body{
+background-color: aqua;
+}
+
+header{
+    
+}
+
+.left{
+background-color: blue;
+height: 275px;
+width: 275px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.center{
+background-color: blueviolet;
+height: 275px;
+width: 275px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.right{
+background-color: red;
+height: 275px;
+width: 275px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#item-row{
+    display: flex;
+    justify-content: space-evenly;
+}
