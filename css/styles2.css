@@ -1,45 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
 html {
-margin:  150px 150px 1050px 150px;
+    margin: 75px 150px 1050px 150px;
 }
 
-
-
-body{
-background-color: aqua;
+body {
+    font-family: 'Permanent Marker', cursive;
+    background-color: aqua;
 }
 
-header{
+/* NAV BAR */
+header {
+    background-color: aliceblue;
+    height: 150px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content:center;
+    
+}
+#nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     
 }
 
-.left{
-background-color: blue;
-height: 275px;
-width: 275px;
-display: flex;
-justify-content: center;
-align-items: center;
+li{ list-style: none;
+    padding-right: 95px;
 }
 
-.center{
-background-color: blueviolet;
-height: 275px;
-width: 275px;
-display: flex;
-justify-content: center;
-align-items: center;
+a{text-decoration: none;
 }
 
-.right{
-background-color: red;
-height: 275px;
-width: 275px;
-display: flex;
-justify-content: center;
-align-items: center;
+
+/*ITEM ROWS*/
+
+.left {
+    background-color: blue;
+    height: 275px;
+    width: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#item-row{
+.center {
+    background-color: blueviolet;
+    height: 275px;
+    width: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    background-color: red;
+    height: 275px;
+    width: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#item-row {
     display: flex;
     justify-content: space-evenly;
 }
