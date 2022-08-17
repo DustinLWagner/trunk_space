@@ -56,6 +56,9 @@ header {
     transform: scale(1.2);
 
 }
+.prod-box a{
+    text-decoration: none;
+}
 
 
 /*
