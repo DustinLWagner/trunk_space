@@ -1,80 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-
 html {
-    margin: 75px 150px 1050px 150px;
+
 }
-.hide-scroll::-webkit-scrollbar{
+
+.hide-scroll::-webkit-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
-    display: none;}
+    display: none;
+}
 
 
 /*---------------------BODY------------------------*/
 body {
     font-family: 'Permanent Marker', cursive;
-    background-color: aqua;
+    background-color: black;
 
 }
 
 /*---------------------NAV BAR------------------------*/
 header {
-    background-color: aliceblue;
-    height: 20%;
+    background-color: rgb(34, 129, 212);
+    height: auto;
     padding-bottom: 5%;
-    display: flex;
-    justify-content:center;
-    
 }
-#nav-links{
+
+.nav-links {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     
 }
-
-.nav-bar li{ list-style: none;
-    padding-right: 95px;
+.nav-bar {
+    width: 100%;
+}
+.nav-bar a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 30%;
+    background-color: #555;
+}
+.nav-bar a:hover {
+    background-color: #000;
+}
+.nav-bar li {
+    display:inline-flex;
+    justify-content: center;
+    width: 17%;
+    background-color: aqua;
 }
 
-.nav-bar a{text-decoration: none;
-    font-size: large;
-}
-
+/* ASAP !FIX THESE BELOW FOR RESPONSIVE VIEWS! ASAP*/
 
 /*--------------------ITEM ROWS-------------------------*/
 
 .proj-box {
-    background-color: blue;
-    text-align: center;
-    min-height: 275px;
-    width: 275px;
-    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     transition: ease all 0.5s;
+    width: 15%;
+    height: 235px;
+    background-color: green;
 }
-.proj-box h1{
+
+.proj-box:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.proj-box a {
+    text-decoration: none;
+}
+
+.proj-box h1 {
     color: fuchsia;
     font-size: 25px;
     font-weight: 400;
 }
 
-.proj-box:hover{
-    cursor: pointer;
-    transform: scale(1.2);
+.proj-box-0 {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
 
 }
-.proj-box a{
-    text-decoration: none;
+
+.proj-box-cont {
+    height: 100%;
+
 }
 
-/* ASAP !FIX THESE BELOW FOR RESPONSIVE VIEWS! ASAP*/
-#item-row {
+.item-row {
     display: flex;
     justify-content: space-evenly;
-    margin:25px 25px 50px 25px;
-}
-#item-row-2 {
-    display: flex;
-    justify-content: space-evenly;
-    margin:25px 25px 50px 25px;
+    margin-bottom: 5%;
+
+    height: 100%;
+    background-color: blanchedalmond;
+
 }
