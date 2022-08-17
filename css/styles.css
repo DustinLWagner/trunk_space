@@ -21,6 +21,11 @@ body {
     
 }
 
+.prod-info-text h1{
+    align-items: center;
+    justify-content: center;
+}
+
 .main{
     height: 2160px;
 }
