@@ -4,13 +4,20 @@
 html {
     margin: 75px 150px 1050px 150px;
 }
+.hide-scroll::-webkit-scrollbar{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: none;}
 
+
+/*---------------------BODY------------------------*/
 body {
     font-family: 'Permanent Marker', cursive;
     background-color: aqua;
+
 }
 
-/* NAV BAR */
+/*---------------------NAV BAR------------------------*/
 header {
     background-color: aliceblue;
     height: 20%;
@@ -35,9 +42,9 @@ header {
 }
 
 
-/*ITEM ROWS*/
+/*--------------------ITEM ROWS-------------------------*/
 
-.prod-box {
+.proj-box {
     background-color: blue;
     text-align: center;
     min-height: 275px;
@@ -45,42 +52,22 @@ header {
     position: relative;
     transition: ease all 0.5s;
 }
-.prod-box h1{
+.proj-box h1{
     color: fuchsia;
     font-size: 25px;
     font-weight: 400;
 }
 
-.prod-box:hover{
+.proj-box:hover{
     cursor: pointer;
     transform: scale(1.2);
 
 }
-.prod-box a{
+.proj-box a{
     text-decoration: none;
 }
 
-
-/*
-.center {
-    background-color: blueviolet;
-    height: 275px;
-    width: 275px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.right {
-    background-color: red;
-    height: 275px;
-    width: 275px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-*/
+/* ASAP !FIX THESE BELOW FOR RESPONSIVE VIEWS! ASAP*/
 #item-row {
     display: flex;
     justify-content: space-evenly;

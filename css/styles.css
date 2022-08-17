@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html {
-    height: 2160px;
+    max-height: 100vh;
+    margin-bottom: 1050px;
 }
+.hide-scroll::-webkit-scrollbar{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: none;}
 
+/*---------------------BODY------------------------*/
 body {
     font-family: 'Permanent Marker', cursive;
     background: #000;
@@ -18,16 +18,8 @@ body {
     background-repeat: no-repeat;
     max-height: 100%;
     height: 100%;
-    
-}
+    overflow: hidden; 
 
-.prod-info-text h1{
-    align-items: center;
-    justify-content: center;
-}
-
-.main{
-    height: 2160px;
 }
 
 h1 {
@@ -39,16 +31,17 @@ h1 {
 p.row {
 
     margin-top: 150px;
-    margin-bottom:100px;
+    margin-bottom: 100px;
 }
 
+/*---------------------Header------------------------*/
 
-/* Header*/
 ul {
     list-style: none;
     display: flex;
     justify-content: center;
 }
+
 li {
     padding-right: 35px;
 }
@@ -59,13 +52,41 @@ a {
 }
 
 
-
-/* Footer */
+/*----------------------Footer-----------------------*/
 footer {
     position: fixed;
     bottom: 0;
     width: 100vw;
     padding-bottom: 10px;
-
-
 }
+
+
+/*----------------------About-----------------------*/
+.about-text {
+    word-wrap: normal;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    font-size: large;
+}
+
+/*--------------------Contact Page and Input-------------------------*/
+
+.proj-info-text h1 {
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.contact-input {}
+
+/*---------------------------------------------*/
