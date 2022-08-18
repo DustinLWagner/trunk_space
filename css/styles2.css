@@ -5,7 +5,6 @@ html {
 }
 
 .hide-scroll::-webkit-scrollbar {
-    -ms-overflow-style: none;
     scrollbar-width: none;
     display: none;
 }
@@ -14,14 +13,15 @@ html {
 /*---------------------BODY------------------------*/
 body {
     font-family: 'Permanent Marker', cursive;
-    background-color: black;
+    background: black;
     background-image: url(/img/earthlights1.png);
     background-repeat: no-repeat;
+    color: white;
 }
+
 
 /*---------------------NAV BAR------------------------*/
 header {
-    background-color: rgb(34, 129, 212);
     height: auto;
     padding-bottom: 5%;
 }
@@ -40,7 +40,9 @@ header {
     justify-content: center;
     text-decoration: none;
     width: 30%;
-    background-color: #555;
+    color: aliceblue;
+    font-weight: 0;
+    font-size: large;
 }
 .nav-bar a:hover {
     background-color: #000;
@@ -48,8 +50,7 @@ header {
 .nav-bar li {
     display:inline-flex;
     justify-content: center;
-    width: 17%;
-    background-color: aqua;
+    width: 16%;
 }
 
 /* ASAP !FIX THESE BELOW FOR RESPONSIVE VIEWS! ASAP*/
@@ -62,8 +63,6 @@ header {
     transition: ease all 0.5s;
     width: 15%;
     height: 235px;
-    
-    background-color:;
 }
 
 .proj-box:hover {
@@ -121,5 +120,44 @@ header {
     margin-bottom: 5%;
     margin-top: 5%;
     height: 100%;
-    background-color:;
 }
+
+/*----------------------Footer-----------------------*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding-bottom: 10px;
+}
+
+
+/*----------------------About-----------------------*/
+.about-text {
+    word-wrap: normal;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    font-size: large;
+}
+
+/*--------------------Contact Page and Input-------------------------*/
+
+.proj-info-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.contact-input {}
+
+/*---------------------------------------------*/
