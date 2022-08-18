@@ -15,7 +15,8 @@ html {
 body {
     font-family: 'Permanent Marker', cursive;
     background-color: black;
-
+    background-image: url(/img/earthlights1.png);
+    background-repeat: no-repeat;
 }
 
 /*---------------------NAV BAR------------------------*/
@@ -57,12 +58,12 @@ header {
 
 .proj-box {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     transition: ease all 0.5s;
     width: 15%;
     height: 235px;
-    background-color: green;
+    
+    background-color:;
 }
 
 .proj-box:hover {
@@ -79,14 +80,36 @@ header {
     font-size: 25px;
     font-weight: 400;
 }
-
+/*---------  PROJ-BOX ----------*/
 .proj-box-0 {
     display: flex;
     justify-content: space-around;
-    background-color: black;
-
 }
+.proj-box-1 {
+    display: flex;
+    justify-content: space-around;
+}
+.proj-box-2 {
+    display: flex;
+    justify-content: space-around;
+}
+.proj-box-3 {
+    display: flex;
+    justify-content: space-around;
+}
+.proj-box-4 {
+    display: flex;
+    justify-content: space-around;
+}
+.proj-box-5 {
+    display: flex;
+    justify-content: space-around;
+}
+/*----------------------------------------------*/
 
+.proj-box img{
+    width: 160%;
+}
 .proj-box-cont {
     height: 100%;
 
@@ -96,8 +119,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 5%;
-
+    margin-top: 5%;
     height: 100%;
-    background-color: blanchedalmond;
-
+    background-color:;
 }
