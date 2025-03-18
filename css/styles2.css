@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-html {
-
-}
+html {}
 
 .hide-scroll::-webkit-scrollbar {
     scrollbar-width: none;
@@ -17,6 +15,7 @@ body {
     background-image: url(/img/earthlights1.png);
     background-repeat: no-repeat;
     color: white;
+
 }
 
 
@@ -30,11 +29,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
+
 .nav-bar {
     width: 100%;
 }
+
 .nav-bar a {
     display: flex;
     justify-content: center;
@@ -44,11 +45,13 @@ header {
     font-weight: 0;
     font-size: large;
 }
+
 .nav-bar a:hover {
     background-color: #000;
 }
+
 .nav-bar li {
-    display:inline-flex;
+    display: inline-flex;
     justify-content: center;
     width: 16%;
 }
@@ -79,36 +82,44 @@ header {
     font-size: 25px;
     font-weight: 400;
 }
+
 /*---------  PROJ-BOX ----------*/
 .proj-box-0 {
     display: flex;
     justify-content: space-around;
 }
+
 .proj-box-1 {
     display: flex;
     justify-content: space-around;
 }
+
 .proj-box-2 {
     display: flex;
     justify-content: space-around;
 }
+
 .proj-box-3 {
     display: flex;
     justify-content: space-around;
 }
+
 .proj-box-4 {
     display: flex;
     justify-content: space-around;
 }
+
 .proj-box-5 {
     display: flex;
     justify-content: space-around;
 }
+
 /*----------------------------------------------*/
 
-.proj-box img{
+.proj-box img {
     width: 160%;
 }
+
 .proj-box-cont {
     height: 100%;
 
@@ -123,13 +134,12 @@ header {
 }
 
 /*----------------------Footer-----------------------*/
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    padding-bottom: 10px;
-}
+footer {}
 
+/*    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    padding-bottom: 10px; */
 
 /*----------------------About-----------------------*/
 .about-text {
