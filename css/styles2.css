@@ -64,8 +64,13 @@ header {
     display: flex;
     align-items: center;
     transition: ease all 0.5s;
-    width: 15%;
+    width: 25%;
     height: 235px;
+
+}
+
+.proj-box img {
+    width: 100%;
 }
 
 .proj-box:hover {
@@ -81,6 +86,21 @@ header {
     color: fuchsia;
     font-size: 25px;
     font-weight: 400;
+}
+
+.proj-box-cont {
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.item-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    height: 100%;
 }
 
 /*---------  PROJ-BOX ----------*/
@@ -127,25 +147,6 @@ header {
 .proj-box-8 {
     display: flex;
     justify-content: space-around;
-}
-
-/*----------------------------------------------*/
-
-.proj-box img {
-    width: 160%;
-}
-
-.proj-box-cont {
-    height: 100%;
-
-}
-
-.item-row {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    height: 100%;
 }
 
 /*----------------------Footer-----------------------*/
