@@ -204,3 +204,10 @@ footer {}
     justify-content: center;
 
 }
+
+#revealCoin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+}
