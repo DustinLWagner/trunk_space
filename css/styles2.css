@@ -64,7 +64,7 @@ header {
     display: flex;
     align-items: center;
     transition: ease all 0.5s;
-    width: 25%;
+    width: 20%;
     height: 235px;
 
 }
@@ -75,7 +75,7 @@ header {
 
 .proj-box:hover {
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.6);
 }
 
 .proj-box a {
@@ -171,12 +171,6 @@ footer {}
 
 /*--------------------Contact Page and Input-------------------------*/
 
-.proj-info-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .contact-form-text {
     display: flex;
     justify-content: space-around;
@@ -187,4 +181,18 @@ footer {}
 
 .contact-input {}
 
-/*---------------------------------------------*/
+/*---------------------Project Info------------------------*/
+
+.proj-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.proj-info-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
