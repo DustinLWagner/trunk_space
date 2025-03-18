@@ -2,10 +2,10 @@
 
 html {}
 
-.hide-scroll::-webkit-scrollbar {
+/*.hide-scroll::-webkit-scrollbar {
     scrollbar-width: none;
     display: none;
-}
+}*/
 
 
 /*---------------------BODY------------------------*/
@@ -114,6 +114,21 @@ header {
     justify-content: space-around;
 }
 
+.proj-box-6 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.proj-box-7 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.proj-box-8 {
+    display: flex;
+    justify-content: space-around;
+}
+
 /*----------------------------------------------*/
 
 .proj-box img {
@@ -136,9 +151,10 @@ header {
 /*----------------------Footer-----------------------*/
 footer {}
 
-/*    position: fixed;
+/*    
+    position: fixed;
     bottom: 0px;
-    width: 100vw;
+    width: 100vw;    
     padding-bottom: 10px; */
 
 /*----------------------About-----------------------*/
