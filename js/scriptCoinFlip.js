@@ -1,6 +1,7 @@
 //get elements
-const coin = document.getElementById("headsCoin");
+const coin = document.getElementById("showCoin");
 const revealCoin = document.getElementById("revealCoin");
+
 
 //get a random integer 
 function getRandomInt(max) {
@@ -10,27 +11,26 @@ function getRandomInt(max) {
 //add listeners
 coin.addEventListener("click", flipCoin);
 
-
-//this logs to console that coin is clicked and logs the number
+//logs to console that coin is clicked, logs the number, 
+//and pass randInt to the flipResult function
 function flipCoin() {
     console.log("You flipped the coin!");
-    let randInt = getRandomInt(2);
+    let randInt = getRandomInt(10000);
     flipResult(randInt);
     console.log(randInt);
 };
 
-
-
 //this modifies h1"revealCoin" to display coin flip result
-
+//modifies showCoin to correct image reflicting coin flip result
+// Determines if randInt is EVEN or ODD determing heads or tails.
 function flipResult(randInt) {
-    if (randInt === 1) {
+    if (randInt % 2 === 0) {
         revealCoin.innerText = "Heads"
-    }
-    else if (randInt === 2) {
-        revealCoin.innerText = "Tails"
+        document.getElementById("showCoin").src = "/img/headsCoin.png"
     }
     else {
-        revealCoin.innerText = "Click The Coin To Flip"
+        revealCoin.innerText = "Tails"
+        document.getElementById("showCoin").src = "/img/tailsCoin.png"
+
     }
 };
