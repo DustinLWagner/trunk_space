@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/*html {}
+
+.hide-scroll::-webkit-scrollbar {
+    scrollbar-width: none;
+    display: none;
+}*/
+
+
+/*---------------------BODY------------------------*/
+body {
+    font-family: 'Permanent Marker', cursive;
+    background: rgb(0, 0, 0);
+    background-image: url(/img/defaultBackground.png);
+    background-repeat: repeat;
+    color: rgb(0, 0, 0);
+
+}
+
+
+/*---------------------NAV BAR------------------------*/
+header {
+    height: auto;
+    padding-bottom: 5%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-bar {
+    width: 100%;
+}
+
+.nav-bar a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 30%;
+    color: rgb(0, 0, 0);
+    font-weight: 0;
+    font-size: large;
+    transition: ease all 0.5s;
+}
+
+.nav-bar a:hover {
+    background-color: #ffffff00;
+    transform: scale(1.5);
+}
+
+.nav-bar li {
+    display: inline-flex;
+    justify-content: center;
+    width: 16%;
+}
+
+/*---------------------Project Info------------------------*/
+
+.proj-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.proj-info-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/*---------------------Project 0------------------------*/
+
+.diceBox {
+    display: flex;
+    justify-content: center;
+    min-height: 20vh;
+}
+
+.diceRolled {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+}
