@@ -78,7 +78,15 @@ header {
     align-items: center;
     justify-content: center;
     min-height: 50vh;
+    transform: scale(.8);
+
 }
+
+.diceBox :hover {
+    display: flex;
+    transform: scale(1.5);
+}
+
 
 .diceRolled {
     /*--Add dice roll animation--*/
@@ -87,3 +95,24 @@ header {
     justify-content: center;
     min-height: 10vh;
 }
+
+/*----------------------DICE-----------------------
+
+.diceD a {
+    transition: ease all 0.5s;
+}
+.diceD a {
+    transition: ease all 0.5s;
+}
+.diceD a {
+    transition: ease all 0.5s;
+}
+.diceD a {
+    transition: ease all 0.5s;
+}
+.diceD a {
+    transition: ease all 0.5s;
+}
+.diceD a {
+    transition: ease all 0.5s;
+}*/
