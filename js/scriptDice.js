@@ -21,6 +21,6 @@ diceD20.addEventListener("click", alert);
 //Functions//
 
 function alert() {
-    console.log("Dice Clicked")
+    console.log(window.event.target.id)
 
 }
