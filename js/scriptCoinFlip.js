@@ -1,4 +1,4 @@
-//get elements
+//create varibles for get elements
 const coin = document.getElementById("showCoin");
 const revealCoin = document.getElementById("revealCoin");
 

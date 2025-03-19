@@ -58,7 +58,7 @@ header {
     width: 16%;
 }
 
-/*---------------------Project Info------------------------*/
+/*---------------------------------------------*/
 
 .proj-title {
     display: flex;
@@ -67,24 +67,23 @@ header {
 
 }
 
-.proj-info-text {
+.mainContainer {
     display: flex;
-    align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 20;
 }
-
-/*---------------------Project 0------------------------*/
 
 .diceBox {
     display: flex;
+    align-items: center;
     justify-content: center;
-    min-height: 20vh;
+    min-height: 50vh;
 }
 
 .diceRolled {
+    /*--Add dice roll animation--*/
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 20vh;
+    min-height: 10vh;
 }
