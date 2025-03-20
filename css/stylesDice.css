@@ -1,35 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-/*html {}
-
-.hide-scroll::-webkit-scrollbar {
-    scrollbar-width: none;
-    display: none;
-}*/
-
-
-/*---------------------BODY------------------------*/
-body {
-    font-family: 'Permanent Marker', cursive;
-    background: rgb(0, 0, 0);
-    background-image: url(/img/defaultBackground.png);
-    background-repeat: repeat;
-    color: rgb(0, 0, 0);
-
-}
-
-
-/*---------------------NAV BAR------------------------*/
+/*html {}*/
+/*---------------------HEADER------------------------*/
 header {
     height: auto;
     padding-bottom: 5%;
 }
 
+/*---------------------NAV BAR------------------------*/
 .nav-links {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .nav-bar {
@@ -58,13 +40,21 @@ header {
     width: 16%;
 }
 
+/*---------------------BODY------------------------*/
+body {
+    font-family: 'Permanent Marker', cursive;
+    background: rgb(0, 0, 0);
+    background-image: url(/img/defaultBackground.png);
+    background-repeat: repeat;
+    color: rgb(0, 0, 0);
+}
+
 /*---------------------------------------------*/
 
 .proj-title {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .mainContainer {
@@ -72,21 +62,6 @@ header {
     justify-content: center;
     min-height: 20;
 }
-
-.diceBox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
-    transform: scale(.8);
-
-}
-
-.diceBox :hover {
-    display: flex;
-    transform: scale(1.5);
-}
-
 
 .diceRolled {
     /*--Add dice roll animation--*/
@@ -96,23 +71,25 @@ header {
     min-height: 10vh;
 }
 
-/*----------------------DICE-----------------------
+/*----------------------DICE-----------------------*/
 
-.diceD a {
+.diceBox {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+    min-width: 50vw;
+
+}
+
+.diceBox img {
+    display: flex;
+    justify-content: center;
+    transform: scale(.8);
     transition: ease all 0.5s;
 }
-.diceD a {
-    transition: ease all 0.5s;
+
+.diceBox img:hover {
+    transform: scale(1.2);
 }
-.diceD a {
-    transition: ease all 0.5s;
-}
-.diceD a {
-    transition: ease all 0.5s;
-}
-.diceD a {
-    transition: ease all 0.5s;
-}
-.diceD a {
-    transition: ease all 0.5s;
-}*/
