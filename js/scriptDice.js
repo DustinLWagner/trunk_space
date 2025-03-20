@@ -5,14 +5,8 @@ const diceD8 = document.getElementById("diceD8").addEventListener("click", rollD
 const diceD10 = document.getElementById("diceD10").addEventListener("click", rollD10);
 const diceD12 = document.getElementById("diceD12").addEventListener("click", rollD12);
 const diceD20 = document.getElementById("diceD20").addEventListener("click", rollD20);
+const shaketime = 100;
 
-//add listeners//
-//diceD4.addEventListener("click", rollDice);
-//diceD6.addEventListener("click", rollDice);
-//diceD8.addEventListener("click", rollDice);
-//diceD10.addEventListener("click", rollDice);
-//diceD12.addEventListener("click", rollDice);
-//diceD20.addEventListener("click", rollDice);
 
 //get random integer//
 
@@ -61,3 +55,56 @@ function rollD20() {
 
 
 // HTMLclass diceRolled animation needed //
+
+// terribly rotate the dice on click //
+function rotateDice(el) {
+    el.classList.add('rotateable');
+    el.style.transform = 'rotate45deg)';
+    setTimeout(function () {
+        el.style.transform = 'rotate(90deg)';
+        setTimeout(function () {
+            el.style.transform = 'rotate(135deg)';
+            setTimeout(function () {
+                el.style.transform = 'rotate(180deg)';
+                setTimeout(function () {
+                    el.style.transform = 'rotate(225deg)';
+                    setTimeout(function () {
+                        el.style.transform = 'rotate(270deg)';
+                        setTimeout(function () {
+                            el.style.transform = 'rotate(315deg)';
+                            setTimeout(function () {
+                                el.style.transform = 'rotate(0deg)';
+                                setTimeout(function () {
+                                    el.style.transform = 'rotate(45deg)';
+
+
+                                }, shaketime);
+                            }, shaketime);
+                        }, shaketime);
+                    }, shaketime);
+                }, shaketime);
+            }, shaketime);
+        }, shaketime);
+    }, shaketime);
+
+
+}
+
+document.getElementById("diceD4").addEventListener("click", function (ev) {
+    rotateDice(this);
+})
+document.getElementById("diceD6").addEventListener("click", function (ev) {
+    rotateDice(this);
+})
+document.getElementById("diceD8").addEventListener("click", function (ev) {
+    rotateDice(this);
+})
+document.getElementById("diceD10").addEventListener("click", function (ev) {
+    rotateDice(this);
+})
+document.getElementById("diceD12").addEventListener("click", function (ev) {
+    rotateDice(this);
+})
+document.getElementById("diceD20").addEventListener("click", function (ev) {
+    rotateDice(this);
+})

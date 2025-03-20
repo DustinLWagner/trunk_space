@@ -99,4 +99,9 @@ body {
 
 .diceBox img:hover {
     transform: scale(1.2);
+
+}
+
+.rotateable {
+    transition: all 100ms;
 }
