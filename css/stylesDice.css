@@ -63,7 +63,15 @@ body {
     min-height: 20;
 }
 
-.diceRolled {
+.diceRolling {
+    /*--Add dice roll animation--*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+}
+
+#diceResult {
     /*--Add dice roll animation--*/
     display: flex;
     align-items: center;
