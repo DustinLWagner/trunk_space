@@ -19,6 +19,7 @@ const diceD20 = document.getElementById("diceD20").addEventListener("click", rol
 function getRandomInt(max) {
     return Math.floor(Math.random() * max + 1);
 }
+
 //roll the dice//
 
 function rollD4() {
@@ -31,26 +32,31 @@ function rollD6() {
     let randInt = getRandomInt(6);
     console.log(window.event.target.id);
     console.log("You rolled a " + randInt);
+    diceResult.innerText = ("You rolled a " + randInt);
 };
 function rollD8() {
     let randInt = getRandomInt(8);
     console.log(window.event.target.id);
     console.log("You rolled a " + randInt);
+    diceResult.innerText = ("You rolled a " + randInt);
 };
 function rollD10() {
     let randInt = getRandomInt(10);
     console.log(window.event.target.id);
     console.log("You rolled a " + randInt);
+    diceResult.innerText = ("You rolled a " + randInt);
 };
 function rollD12() {
     let randInt = getRandomInt(12);
     console.log(window.event.target.id);
     console.log("You rolled a " + randInt);
+    diceResult.innerText = ("You rolled a " + randInt);
 };
 function rollD20() {
     let randInt = getRandomInt(20);
     console.log(window.event.target.id);
     console.log("You rolled a " + randInt);
+    diceResult.innerText = ("You rolled a " + randInt);
 };
 
 

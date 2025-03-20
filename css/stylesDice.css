@@ -71,8 +71,7 @@ body {
     min-height: 10vh;
 }
 
-#diceResult {
-    /*--Add dice roll animation--*/
+#diceResultBox {
     display: flex;
     align-items: center;
     justify-content: center;
