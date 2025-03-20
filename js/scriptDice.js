@@ -75,7 +75,7 @@ function rotateDice(el) {
                             setTimeout(function () {
                                 el.style.transform = 'rotate(0deg)';
                                 setTimeout(function () {
-                                    el.style.transform = 'rotate(45deg)';
+                                    el.style.transform = 'rotate(-45deg)';
 
 
                                 }, shaketime);
