@@ -13,8 +13,9 @@ diceIds.forEach(diceId => {
 
 //create vars and arrays for roll animation
 const rotations = [90, 180, 270, 360];
+const resetDice = (3000);
 
-// HTMLclass diceRolled animation needed //
+//use forEach to rotate each diceId
 
 diceIds.forEach(diceId => {
     document.getElementById(diceId).addEventListener("click", function () {
@@ -23,13 +24,21 @@ diceIds.forEach(diceId => {
 });
 
 
-function rotateDice(el, spinTime) {
-    setTimeout(() => {
-        el.classList.add('rotateable');
-        el.style.transform = `rotate(160deg)`;
-        el.style.transition = `transform ${spinTime}ms`;
-    }, 0);
+// rotateDice animation  //
 
+function rotateDice(el, spinTime) {
+
+    el.classList.add('rotateable');
+    el.style.transition = `transform ${spinTime}ms`;
+
+
+    el.style.transform = `rotate(0deg)`;
+    setTimeout(() => {
+        el.style.transform = `rotate(260deg)`;
+    }, 0);
+    setTimeout(() => {
+        el.style.transform = `rotate(0deg)`;
+    }, resetDice);
 };
 
 
