@@ -71,7 +71,6 @@ body {
 }
 
 .belowDiceResult {
-    /*--Add dice roll animation--*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,6 +101,7 @@ body {
 
 }
 
+/*------Roll Animation Class----------*/
 .rotateable {
     transition: all 100ms;
 }
