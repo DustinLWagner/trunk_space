@@ -103,7 +103,7 @@ body {
 
 /*------Roll Animation----------*/
 .rotateDice {
-    animation: image4 1s ease-in-out forwards;
+    animation: image4 2s ease-in-out forwards;
 }
 
 @keyframes image4 {
@@ -112,7 +112,7 @@ body {
     }
 
     100% {
-        transform: rotate(270deg);
+        transform: rotate(2160deg);
     }
 }
 
