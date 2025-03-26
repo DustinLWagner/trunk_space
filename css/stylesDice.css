@@ -101,7 +101,25 @@ body {
 
 }
 
-/*------Roll Animation Class----------*/
+/*------Roll Animation----------*/
+.rotateDice {
+    animation: image4 1s ease-in-out forwards;
+}
+
+@keyframes image4 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+
+
+/*
 .rotateable {
     transition: all 100ms;
 }
+*/
