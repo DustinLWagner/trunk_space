@@ -1,13 +1,13 @@
 //array to store dice ids//
 const diceIds = ["4", "6", "8", "10", "12", "20"];
-//use forEach to add listenters to all dice and roll
+//use forEach to add listenters and grab el Id for all dice and roll dice
 diceIds.forEach(diceId => {
     document.getElementById(diceId).addEventListener("click", function () {
         let randInt = Math.floor(Math.random() * diceId + 1);
         document.getElementById(diceId).classList.add('rotateDice');
         console.log(window.event.target.id);
         console.log("You rolled " + randInt);
-
+        //time outs to reset the dice, display dice result, and remove it
         setTimeout(() => {
             document.getElementById(diceId).classList.remove('rotateDice');
         }, 3000);
