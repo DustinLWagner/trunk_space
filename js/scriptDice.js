@@ -7,49 +7,19 @@ diceIds.forEach(diceId => {
         document.getElementById(diceId).classList.add('rotateDice');
         console.log(window.event.target.id);
         console.log("You rolled " + randInt);
-        diceResult.innerText = ("You rolled " + randInt + " on a D" + diceId);
+
         setTimeout(() => {
             document.getElementById(diceId).classList.remove('rotateDice');
         }, 3000);
+        setTimeout(() => {
+            diceResult.innerText = ("You rolled " + randInt + " on a D" + diceId);
+        }, 2000);
+        setTimeout(() => {
+            diceResult.innerText = (" ");
+        }, 5000);
     });
 });
-
 
 /*
-diceIds.forEach(diceId => {
-    document.addEventListener("click", () => {
-        document.getElementById(diceId).classList.add('rotateDice');
-
-    });
-});
-
-//create vars and arrays for roll animation
-//const rotations = [90, 180, 270, 360];
-//const resetDice = (3000);
-
-
-//use forEach to rotate each diceId
-diceIds.forEach(diceId => {
-    document.getElementById(diceId).addEventListener("click", function () {
-        diceId.classList.add('rotateDice');
-    })
-});
-
-
-// rotateDice animation  //
-
-function rotateDice(el, spinTime) {
-
-    el.classList.add('rotateable');
-    el.style.transition = `transform ${spinTime}ms`;
-
-
-    el.style.transform = `rotate(0deg)`;
-    setTimeout(() => {
-        el.style.transform = `rotate(260deg)`;
-    }, 0);
-    setTimeout(() => {
-        el.style.transform = `rotate(0deg)`;
-    }, resetDice);
-};
+create an array to store the dice values and display the values history in a div 
 */
