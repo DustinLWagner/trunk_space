@@ -72,11 +72,11 @@ body {
     min-height: 10vh;
 }
 
-.belowDiceResult {
+#belowDiceResult {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 158vh;
+    min-height: max-content;
 }
 
 /*----------------------DICE-----------------------*/
