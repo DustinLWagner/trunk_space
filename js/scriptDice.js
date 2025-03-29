@@ -28,12 +28,4 @@ diceIds.forEach(diceId => {
     });
 });
 
-/*
-create an array to store the dice values and display the values history in a div
-*/
-
-//function storeRoll(diceRolls) {}
-
-//document.getElementById(diceRolls)
-
-//diceRolls.innerText = (diceRolls);
+// add a reset diceRollsBox button to clear DiceRollsBox
